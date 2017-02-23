@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D8D8D8"
+    android:fillViewport="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/llContainTop"
+            android:layout_alignTop="@+id/llContainTop"
+            android:src="@drawable/img_result_top" />
+
+        <LinearLayout
+            android:id="@+id/llContainTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="ĐẾM NGƯỢC"
+                android:textColor="#4A4A4A"
+                android:textSize="12dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TextViewTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01" />
+
+                    <TextView
+                        style="@style/TextviewDesTime"
+                        android:text="Ngày" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TextViewTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01" />
+
+                    <TextView
+                        style="@style/TextviewDesTime"
+                        android:text="Giờ" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TextViewTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01" />
+
+                    <TextView
+                        style="@style/TextviewDesTime"
+                        android:text="Phút" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TextViewTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01" />
+
+                    <TextView
+                        style="@style/TextviewDesTime"
+                        android:text="Giây" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#ccFF2A68"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GIÁ TRỊ GIẢI THƯỞNG ƯỚC TÍNH KỲ TỚI"
+                    android:textColor="@android:color/white"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12,000,000,000 đ"
+                    android:textColor="@android:color/white"
+                    android:textSize="30dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <!--2-->
+        <LinearLayout
+            android:id="@+id/llCOntainNuber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llContainTop"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KẾT QUẢ TRÚNG THƯỞNG"
+                android:textColor="#4A4A4A"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:paddingBottom="18dp"
+                android:text="13/01/2017 - Kỳ #00077"
+                android:textColor="#4A4A4A" />
+
+            <include layout="@layout/item_number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llCOntainNuber"
+            android:orientation="vertical">
+
+            <include layout="@layout/item_list_header_result" />
+
+            <include layout="@layout/item_list_content_result_1" />
+
+            <include layout="@layout/item_list_content_result_2" />
+
+            <include layout="@layout/item_list_content_result_3" />
+
+            <include layout="@layout/item_list_content_result_4" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

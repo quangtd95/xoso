@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_background"
+    android:fitsSystemWindows="true">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbarThumbVertical="@android:color/transparent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/img_background"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center|top"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/left_right_padding"
+            android:paddingRight="@dimen/left_right_padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
+                android:text="ĐĂNG NHẬP VỚI" />
+
+            <include layout="@layout/custom_tab_facebook_google" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="HOẶC TẠO TÀI KHOẢN MỚI" />
+
+            <EditText
+                android:id="@+id/edtName"
+                style="@style/EditextDefault"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:hint="HỌ VÀ TÊN" />
+
+            <EditText
+                android:id="@+id/edtMail"
+                style="@style/EditextDefault"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:hint="ĐỊA CHỈ MAIL" />
+
+            <EditText
+                android:id="@+id/edtPass"
+                style="@style/EditextDefault"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:hint="MẬT KHẨU"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:id="@+id/tvRegister"
+                style="@style/TextViewLoginRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ĐĂNG KÝ NGAY!" />
+
+            <TextView
+                android:id="@+id/tvTermOfUse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/tvLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="41dp"
+                android:text="ĐÃ CÓ TÀI KHOẢN ĐĂNG NHẬP NGAY" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

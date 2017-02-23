@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/llContain"
+        android:layout_alignTop="@+id/llContain"
+        android:adjustViewBounds="true"
+        android:paddingBottom="4dp"
+        android:paddingLeft="14dp"
+        android:paddingTop="4dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_statistic_content" />
+
+    <LinearLayout
+        android:id="@+id/llContain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tvNumber"
+                android:layout_alignTop="@+id/tvNumber"
+                android:adjustViewBounds="true"
+                android:src="@drawable/img_number_3" />
+
+            <TextView
+                android:id="@+id/tvNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="12"
+                android:textColor="@android:color/white"
+                android:textSize="12dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="18"
+            android:textColor="#4A4A4A" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="10/02/2017"
+            android:textColor="#4A4A4A" />
+
+        <LinearLayout
+            android:id="@+id/llDetail"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/ic_statistic_detail"
+                android:text="Xem chi tiết >"
+                android:textColor="#4A4A4A" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

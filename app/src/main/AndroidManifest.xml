@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="vn.asiantech.pah">
+
+    <!-- Common permission -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.NETWORK" />
+
+    <application
+        android:name="vn.asiantech.pah.BaseApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- Activities -->
+        <activity
+            android:name=".ui.welcome.SplashActivity_"
+            android:noHistory="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.home.HomeActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.account.RegisterActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/noAnimTheme" />
+        <activity
+            android:name=".ui.account.LoginActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/noAnimTheme" />
+    </application>
+</manifest>

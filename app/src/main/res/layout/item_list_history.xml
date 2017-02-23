@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/shape_item_list_history"
+    android:paddingTop="10dp">
+
+    <include layout="@layout/item_number" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/rlContainText"
+        android:layout_alignTop="@+id/rlContainText"
+        android:background="@drawable/shape_item_text_list_history" />
+
+    <RelativeLayout
+        android:id="@+id/rlContainText"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/llContainNumber"
+        android:layout_alignRight="@+id/llContainNumber"
+        android:layout_below="@+id/llContainNumber"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13-01-2017"
+            android:textColor="#4A4A4A" />
+
+        <TextView
+            android:id="@+id/tvDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Xem chi tiết>"
+            android:textColor="#4A4A4A" />
+    </RelativeLayout>
+
+</RelativeLayout>

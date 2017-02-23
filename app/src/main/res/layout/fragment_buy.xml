@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlHeaderBy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="@android:color/white"
+        android:paddingLeft="@dimen/left_right_padding"
+        android:paddingRight="@dimen/left_right_padding"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="MỜI CHỌN SỐ"
+            android:textColor="#4A4A4A"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:id="@+id/tvRandom"
+            android:layout_centerVertical="true"
+            android:background="@drawable/img_bg_text_random"
+            android:text="Chọn ngẫu nhiên"
+            android:textColor="#4A4A4A" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rlHeaderBy"
+        android:background="@drawable/bg_by"
+        android:layout_above="@+id/llContainBuy"
+        android:paddingLeft="@dimen/left_right_padding"
+        android:paddingRight="@dimen/left_right_padding"
+        android:paddingTop="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ff5e3a"
+        android:orientation="horizontal"
+        android:id="@+id/llContainBuy"
+        android:paddingBottom="10dp"
+        android:paddingLeft="@dimen/left_right_padding"
+        android:paddingRight="@dimen/left_right_padding"
+        android:paddingTop="10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/tvReset"
+            android:background="@drawable/selector_btn_play_again"
+            android:clickable="true"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="CHƠI LẠI"
+            android:textColor="@android:color/white"
+            android:textSize="12dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_register_login"
+            android:clickable="true"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="MUA VÉ"
+            android:textColor="#4A4A4A"
+            android:textSize="12dp" />
+    </LinearLayout>
+</RelativeLayout>

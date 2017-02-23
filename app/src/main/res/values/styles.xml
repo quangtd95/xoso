@@ -1,0 +1,66 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/colorBackground</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textViewStyle">@style/TextViewDefault</item>
+        <item name="android:editTextStyle">@style/EditextDefault</item>
+    </style>
+
+    <style name="TextViewDefault" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textSize">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#F1F2F2</item>
+    </style>
+
+    <style name="EditextDefault" parent="@android:style/Widget.EditText">
+        <item name="android:padding">15dp</item>
+        <item name="android:textColorHint">#9B9B9B</item>
+        <item name="android:textSize">10dp</item>
+        <item name="android:textColor">#727272</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <style name="TextViewLoginRegister">
+        <item name="android:background">@drawable/selector_btn_register_login</item>
+        <item name="android:textSize">13dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="android:textColor">#4A4A4A</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="noAnimTheme" parent="AppTheme">
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+    <!--tab home-->
+    <style name="TextViewTabHome">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">9dp</item>
+        <item name="android:textColor">@drawable/selector_custom_tab_home_text</item>
+    </style>
+
+    <style name="TextViewTime">
+        <item name="android:background">@drawable/bg_time</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TextviewDesTime">
+        <item name="android:textColor">#4A4A4A</item>
+        <item name="android:textSize">9dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+</resources>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_bg_dialog_detail"
+        android:orientation="vertical"
+        android:paddingBottom="14dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_bg_header_dialog_detail"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="14dp"
+            android:paddingTop="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KẾT QUẢ TRÚNG THƯỞNG"
+                android:textColor="#4A4A4A"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="13/01/2017 - Kỳ #00077"
+                android:textColor="#4A4A4A"
+                android:textSize="9dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llCOntainNuber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp">
+
+            <include layout="@layout/item_number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ccFF2A68"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JACKPOT"
+                android:textColor="@android:color/white"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12,000,000,000 đ"
+                android:textColor="@android:color/white"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/item_list_content_result_1" />
+
+            <include layout="@layout/item_list_content_result_2" />
+
+            <include layout="@layout/item_list_content_result_3" />
+
+            <include layout="@layout/item_list_content_result_4" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/left_right_margin"
+            android:layout_marginRight="@dimen/left_right_margin"
+            android:layout_marginTop="23dp"
+            android:background="@drawable/selector_btn_dialog_detail"
+            android:gravity="center"
+            android:id="@+id/tvHistory"
+            android:paddingBottom="13dp"
+            android:paddingTop="13dp"
+            android:text="XEM LỊCH SỬ MUA VÉ"
+            android:textColor="#4A4A4A"
+            android:textSize="12dp" />
+    </LinearLayout>
+</LinearLayout>
